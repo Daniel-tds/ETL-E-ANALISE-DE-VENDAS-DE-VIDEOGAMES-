@@ -1,0 +1,7 @@
+# Arquivos de configuração local e credenciais sensíveis
+.env
+
+# Ambientes virtuais do Python
+venv/
+.venv/
+__pycache__/
