@@ -71,9 +71,7 @@ def _gerar_hash(texto) -> str:
 
 def extrair(file_path: str) -> pd.DataFrame:
     df = pd.read_csv(file_path)
-    df.columns = [_normalizar_header(c) for c in df.columns]
-    df = df[list(TRADUCAO_COLUNAS.keys())]
-    return df.rename(columns=TRADUCAO_COLUNAS)
+    return df
 
 
 def transformar(df: pd.DataFrame) -> pd.DataFrame:
